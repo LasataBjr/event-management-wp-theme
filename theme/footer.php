@@ -1,5 +1,5 @@
 <footer class="bg-gray-800 text-white py-6">
-    <?php get_template_part('template-parts/layouts/footer-content'); ?>
+    <?php get_template_part('template-parts/layouts/footer-content', 'content'); ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

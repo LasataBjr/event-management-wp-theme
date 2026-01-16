@@ -1,3 +1,20 @@
+/*
+  Theme Name: Event Management Theme
+  Theme URI:  http://example.com/event-management-theme
+  Author:      Lasata Bajracharya
+  Author URI:  http://example.com
+  Description: Custom Event Management WordPress Theme with Tailwind CSS
+  Version:     1.0
+  License:     GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domain: event-management-theme
+*/
+
+/**
+ * The line above injects the WordPress file header. It needs to be first,
+ * before this comment.
+ */
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -107,7 +124,7 @@
 }
 
 /*
-! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+  ! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
 */
 
 /*
