@@ -4,6 +4,8 @@
  * before this comment.
  */
 
+@import "./custom/base.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

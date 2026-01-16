@@ -10,10 +10,10 @@
     "tailwindcss": "^3.4.19"
   },
   "scripts": {
-    "tailwind-watch": "tailwindcss -i ./tailwind/tailwind.css -o ./dist/output.css --watch",
+    "tailwind-watch": "tailwindcss -i ./tailwind/tailwind.css -o ./dist/output.css --config ./tailwind/tailwind.config.js --watch",
     "js-watch": "esbuild javascript/script.js --bundle --outfile=theme/js/script.js --watch",
     "dev": "npm run tailwind-watch & npm run js-watch",
-    "production": "tailwindcss -i ./tailwind/tailwind.css -o ./dist/output.css --minify && esbuild javascript/script.js --bundle --minify --outfile=theme/js/script.js",
+    "production": "tailwindcss -i ./tailwind/tailwind.css -o ./dist/output.css --config ./tailwind/tailwind.config.js --minify && esbuild javascript/script.js --bundle --minify --outfile=theme/js/script.js",
     "bundle": "zip -r custom-theme.zip theme"
   }
 

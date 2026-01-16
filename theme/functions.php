@@ -13,17 +13,15 @@ function ev_register_menus() {
 add_action('after_setup_theme', 'ev_register_menus');
 
 function ev_enqueue_styles() {
-    // dist/output.css is one level up from theme directory
-    $theme_path = get_template_directory();
-    $theme_url = get_template_directory_uri();
-    $parent_path = dirname($theme_path);
-    $parent_url = dirname($theme_url);
-    
-    $css_file = $parent_path . '/dist/output.css';
-    $css_url = $parent_url . '/dist/output.css';
+    // Go up one level from theme directory to access dist folder
+    $css_file = dirname(get_template_directory()) . '/dist/output.css';
+    $css_url  = dirname(get_template_directory_uri()) . '/dist/output.css';
 
     if (file_exists($css_file)) {
         wp_enqueue_style('tailwind', $css_url, [], filemtime($css_file));
+    } else {
+        // Debug: Log if file doesn't exist
+        error_log('Tailwind CSS file not found: ' . $css_file);
     }
 }
 add_action('wp_enqueue_scripts', 'ev_enqueue_styles');

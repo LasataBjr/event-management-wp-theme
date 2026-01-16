@@ -1,4 +1,1 @@
-(() => {
-  // javascript/script.js
-  console.log("JS is working!");
-})();
+(()=>{console.log("JS is working!");})();
