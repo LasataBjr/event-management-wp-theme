@@ -157,3 +157,22 @@ function register_contact_submission_cpt() {
 add_action('init', 'register_contact_submission_cpt');
 
 
+function register_services_cpt() {
+    register_post_type('service', [
+        'labels' => [
+            'name' => 'Services',
+            'singular_name' => 'Service',
+            'add_new' => 'Add New Service',
+            'edit_item' => 'Edit Service',
+            'view_item' => 'View Service',
+            'all_items' => 'All Services',
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => ['slug' => 'services'], // Important for /services/service-name URL
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'show_in_rest' => true,
+        'menu_icon' => 'dashicons-hammer',
+    ]);
+}
+add_action('init', 'register_services_cpt');

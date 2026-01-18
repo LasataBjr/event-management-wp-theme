@@ -9,7 +9,9 @@
 
 get_header(); // Loads header.php
 
-    get_template_part('template-parts/home/hero');
+    get_template_part('template-parts/home/banner');
     get_template_part('template-parts/home/intro');
 
  get_footer(); 
+
+ ?>
