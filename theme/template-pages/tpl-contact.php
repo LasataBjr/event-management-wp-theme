@@ -84,25 +84,6 @@ get_header();
         </div>
     </section>
 
-    <!-- Google Map Section -->
-    <?php if( get_field('google_map', 'option') ): 
-        $location = get_field('google_map', 'option'); ?>
-        <section class="map-section pb-16 lg:pb-24 px-4 sm:px-8 lg:px-16">
-            <div class="max-w-7xl mx-auto">
-                <div class="map-container rounded-lg overflow-hidden shadow-xl">
-                    <iframe
-                        width="100%"
-                        height="450"
-                        style="border:0"
-                        loading="lazy"
-                        allowfullscreen
-                        src="https://www.google.com/maps?q=<?php echo esc_attr($location['lat']); ?>,<?php echo esc_attr($location['lng']); ?>&hl=en&z=14&output=embed">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-    <?php endif; ?>
-
 </main>
 
 <?php get_footer(); ?>

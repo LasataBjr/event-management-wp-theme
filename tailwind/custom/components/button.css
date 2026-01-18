@@ -67,5 +67,56 @@
     .btn-send-message:hover svg {
       transform: translateX(4px);
     }
+
+    .btn-animate {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-animate::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(255,255,255,0.2);
+      transition: width 0.3s ease;
+    }
+    
+    .btn-animate:hover::after {
+      width: 100%;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.125rem 2.5rem;
+      background-color: #0D1F31;
+      color: #FFFFFF;
+      border-radius: 50px;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(13, 31, 49, 0.3);
+    }
+    
+    .cta-button:hover {
+      background-color: #1F2937;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(13, 31, 49, 0.4);
+    }
+    
+    .cta-arrow {
+      transition: transform 0.3s ease;
+    }
+    
+    .cta-button:hover .cta-arrow {
+      transform: translateX(4px);
+    }
   }
   
