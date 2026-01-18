@@ -31,7 +31,7 @@
                 
                 <!-- Image 2 - Medium -->
                 <div class="image-frame rounded-t-full overflow-hidden h-64 sm:h-72 lg:h-80 bg-gray-300">
-                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=500&fit=crop" 
+                    <img src="https://images.unsplash.com/photo-1626858045633-b248813aec5b?q=80&w=687&auto=format&fit=crop" 
                          alt="Bride portrait" 
                          class="w-full h-full object-cover">
                 </div>
@@ -53,14 +53,14 @@
                 
                 <!-- Image 3 - Medium -->
                 <div class="image-frame rounded-t-full overflow-hidden h-64 sm:h-72 lg:h-80 bg-gray-300">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=500&fit=crop" 
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=500&fit=crop" 
                          alt="Wedding couple outdoor" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Image 4 - Tall (Hidden on mobile, shown on larger screens) -->
                 <div class="hidden lg:block image-frame rounded-t-full overflow-hidden h-72 sm:h-80 lg:h-96 bg-gray-300">
-                    <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=600&fit=crop" 
+                    <img src="https://images.unsplash.com/photo-1600224503282-8a4e3b876808?q=80&w=685&auto=format&fit=crop" 
                          alt="Bride in wedding dress" 
                          class="w-full h-full object-cover">
                 </div>

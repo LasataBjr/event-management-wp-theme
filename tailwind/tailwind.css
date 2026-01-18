@@ -1,10 +1,6 @@
 @import "./custom/file-header.css";
-/**
- * The line above injects the WordPress file header. It needs to be first,
- * before this comment.
- */
-
 @import "./custom/base.css";
+@import "./custom/components/button.css";
 
 @tailwind base;
 @tailwind components;

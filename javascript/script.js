@@ -1,3 +1,4 @@
 // script.js - main frontend JS entry
+import './contact-ajax.js';
 
-console.log("JS is working!");
+console.log('Theme JS loaded');
