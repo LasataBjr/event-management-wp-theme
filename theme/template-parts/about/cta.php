@@ -11,7 +11,7 @@ if (is_array($cta_button_link)) {
 ?>
 
 <?php if ($cta_heading || $cta_text || $cta_button_text): ?>
-<section class="cta py-16 text-center bg-tt-dark-navy text-white">
+<section class="cta py-16 text-center bg-tt-light-bg text-white">
     <div class="max-w-3xl mx-auto px-4">
         <?php if ($cta_heading): ?><h2 class="text-3xl font-bold mb-4"><?php echo esc_html($cta_heading); ?></h2><?php endif; ?>
         <?php if ($cta_text): ?><p class="mb-6"><?php echo esc_html($cta_text); ?></p><?php endif; ?>

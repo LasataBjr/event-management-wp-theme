@@ -118,5 +118,50 @@
     .cta-button:hover .cta-arrow {
       transform: translateX(4px);
     }
+
+
+    .pricing-details {
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 0.9375rem;
+      color: #6B7280;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+    
+    .pricing-cta-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      background-color: #0D1F31;
+      color: #FFFFFF;
+      border-radius: 6px;
+      font-family: 'Rethink Sans', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      transition: all 0.3s ease;
+      text-align: center;
+      margin-top: auto;
+    }
+    
+    .pricing-cta-btn:hover {
+      background-color: #E8C7CD;
+      color: #0D1F31;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(232, 199, 205, 0.4);
+    }
+    
+    .pricing-card.featured .pricing-cta-btn {
+      background-color: #E8C7CD;
+      color: #0D1F31;
+    }
+    
+    .pricing-card.featured .pricing-cta-btn:hover {
+      background-color: #0D1F31;
+      color: #FFFFFF;
+    }
+    
   }
   
