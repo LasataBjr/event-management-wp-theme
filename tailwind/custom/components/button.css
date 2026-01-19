@@ -1,167 +1,143 @@
 @layer components {
-    /* Primary Button */
-    .btn-primary {
-      @apply inline-block px-8 py-4 text-sm font-medium uppercase tracking-wide
-             text-white bg-gray-900 rounded-md
-             shadow-lg transition-all duration-300 ease-in-out
-             hover:bg-gray-800 hover:shadow-xl
-             hover:-translate-y-0.5
-             focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2;
-      position: relative;
-      overflow: hidden;
-    }
-  
-    /* Shine animation on hover */
-    .btn-primary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.15);
-      transition: left 0.5s ease;
-    }
-  
-    .btn-primary:hover::before {
-      left: 100%;
-    }
-  
-    /* Secondary Button */
-    .btn-secondary {
-      @apply inline-block px-8 py-4 text-sm font-medium uppercase tracking-wide
-             text-gray-900 bg-white border border-gray-900 rounded-md
-             transition-all duration-300
-             hover:bg-gray-900 hover:text-white
-             hover:-translate-y-0.5;
-    }
 
-    /* Submit Button */
-    .btn-send-message {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 2.5rem;
-      background-color: transparent;
-      color: #0D1F31;
-      border: 1.5px solid #0D1F31;
-      border-radius: 0;
-      font-size: 0.95rem;
-      font-weight: 500;
-      font-family: 'Rethink Sans', sans-serif;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .btn-send-message:hover {
-      background-color: #0D1F31;
-      color: #F9F9F9;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(13, 31, 49, 0.2);
-    }
-
-    .btn-send-message svg {
-      transition: transform 0.3s ease;
-    }
-
-    .btn-send-message:hover svg {
-      transform: translateX(4px);
-    }
-
-    .btn-animate {
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .btn-animate::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: rgba(255,255,255,0.2);
-      transition: width 0.3s ease;
-    }
-    
-    .btn-animate:hover::after {
-      width: 100%;
-    }
-
-    .cta-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1.125rem 2.5rem;
-      background-color: #0D1F31;
-      color: #FFFFFF;
-      border-radius: 50px;
-      font-family: 'Rethink Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 20px rgba(13, 31, 49, 0.3);
-    }
-    
-    .cta-button:hover {
-      background-color: #1F2937;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(13, 31, 49, 0.4);
-    }
-    
-    .cta-arrow {
-      transition: transform 0.3s ease;
-    }
-    
-    .cta-button:hover .cta-arrow {
-      transform: translateX(4px);
-    }
-
-
-    .pricing-details {
-      font-family: 'Rethink Sans', sans-serif;
-      font-size: 0.9375rem;
-      color: #6B7280;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-      flex-grow: 1;
-    }
-    
-    .pricing-cta-btn {
-      display: inline-block;
-      width: 100%;
-      padding: 0.875rem 1.5rem;
-      background-color: #0D1F31;
-      color: #FFFFFF;
-      border-radius: 6px;
-      font-family: 'Rethink Sans', sans-serif;
-      font-size: 0.9375rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.025em;
-      transition: all 0.3s ease;
-      text-align: center;
-      margin-top: auto;
-    }
-    
-    .pricing-cta-btn:hover {
-      background-color: #E8C7CD;
-      color: #0D1F31;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(232, 199, 205, 0.4);
-    }
-    
-    .pricing-card.featured .pricing-cta-btn {
-      background-color: #E8C7CD;
-      color: #0D1F31;
-    }
-    
-    .pricing-card.featured .pricing-cta-btn:hover {
-      background-color: #0D1F31;
-      color: #FFFFFF;
-    }
-    
+  /* =========================================================
+   * Base Button
+   * ========================================================= */
+  .btn {
+    @apply inline-flex items-center justify-center
+           font-body text-sm font-medium uppercase tracking-wide
+           transition-all duration-300 ease-in-out
+           hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
-  
+
+  /* =========================================================
+   * Primary Button
+   * ========================================================= */
+  .btn-primary {
+    @apply btn px-8 py-4
+           text-white bg-tt-dark-navy rounded-md
+           shadow-lg hover:shadow-xl
+           hover:bg-gray-800
+           focus:ring-tt-dark-navy;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Shine animation */
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-white/15;
+    left: -100%;
+    transition: left 0.5s ease;
+  }
+
+  .btn-primary:hover::before {
+    left: 100%;
+  }
+
+  /* =========================================================
+   * Secondary Button
+   * ========================================================= */
+  .btn-secondary {
+    @apply btn px-8 py-4
+           text-tt-dark-navy bg-white
+           border border-tt-dark-navy rounded-md
+           hover:bg-tt-dark-navy hover:text-white;
+  }
+
+  /* =========================================================
+   * Outline / Submit Button
+   * ========================================================= */
+  .btn-send-message {
+    @apply btn px-10 py-4
+           text-tt-dark-navy bg-transparent
+           border border-tt-dark-navy
+           font-medium;
+    border-width: 1.5px;
+  }
+
+  .btn-send-message:hover {
+    @apply bg-tt-dark-navy text-tt-white shadow-md;
+    box-shadow: 0 4px 12px rgba(13, 31, 49, 0.2);
+  }
+
+  /* =========================================================
+   * Generic Button Hover Overlay
+   * ========================================================= */
+  .btn-animate {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-animate::after {
+    content: '';
+    @apply absolute inset-y-0 left-0 bg-white/20;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  .btn-animate:hover::after {
+    width: 100%;
+  }
+
+  /* =========================================================
+   * CTA Button (Rounded / Marketing)
+   * ========================================================= */
+  .cta-button {
+    @apply btn gap-3 px-10 py-[1.125rem]
+           bg-tt-dark-navy text-white
+           rounded-full font-semibold
+           tracking-widest
+           shadow-xl;
+    box-shadow: 0 8px 20px rgba(13, 31, 49, 0.3);
+  }
+
+  .cta-button:hover {
+    @apply bg-gray-800;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(13, 31, 49, 0.4);
+  }
+
+  .cta-arrow {
+    @apply transition-transform duration-300;
+  }
+
+  .cta-button:hover .cta-arrow {
+    @apply translate-x-1;
+  }
+
+  /* =========================================================
+   * Pricing Card Content
+   * ========================================================= */
+  .pricing-details {
+    @apply text-[0.9375rem] text-gray-500 leading-relaxed mb-8;
+    flex-grow: 1;
+  }
+
+  /* =========================================================
+   * Pricing CTA Button
+   * ========================================================= */
+  .pricing-cta-btn {
+    @apply btn w-full px-6 py-3
+           bg-tt-dark-navy text-white
+           rounded-md font-semibold
+           tracking-wide mt-auto text-center
+           shadow-md;
+  }
+
+  .pricing-cta-btn:hover {
+    @apply bg-tt-pink-accent text-tt-dark-navy;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(232, 199, 205, 0.4);
+  }
+
+  .pricing-card.featured .pricing-cta-btn {
+    @apply bg-tt-pink-accent text-tt-dark-navy;
+  }
+
+  .pricing-card.featured .pricing-cta-btn:hover {
+    @apply bg-tt-dark-navy text-white;
+  }
+
+}
