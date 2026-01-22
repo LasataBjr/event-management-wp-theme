@@ -115,10 +115,10 @@ if (have_posts()):
             <?php if ($section['heading'] || $section['content']): ?>
             <div class="text-section mb-8">
                 <?php if ($section['heading']): ?>
-                    <h2 class="section-heading text-2xl font-semibold mb-2"><?php echo esc_html($section['heading']); ?></h2>
+                    <h2 class="font-heading text-2xl font-semibold mb-5 leading-snug"><?php echo esc_html($section['heading']); ?></h2>
                 <?php endif; ?>
                 <?php if ($section['content']): ?>
-                    <div class="section-content text-gray-700"><?php echo wpautop(esc_html($section['content'])); ?></div>
+                    <div class="leading-loose space-y-4 text-gray-700"><?php echo wpautop(esc_html($section['content'])); ?></div>
                 <?php endif; ?>
             </div>
             <?php endif; ?>

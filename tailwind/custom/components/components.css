@@ -1,0 +1,30 @@
+@layer components {
+
+    .card {
+      @apply bg-white rounded-xl border border-gray-200
+             p-8 text-center
+             transition-all duration-300
+             flex flex-col h-full;
+    }
+  
+    .card:hover {
+      @apply -translate-y-2 shadow-xl border-tt-pink-accent;
+    }
+  
+    .card-img {
+      @apply mx-auto mb-6 h-16 transition-transform;
+    }
+  
+    .card:hover .card-img {
+      @apply scale-110;
+    }
+  
+    .card-title {
+      @apply text-xl font-semibold mb-2;
+    }
+  
+    .card-text {
+      @apply text-gray-500 text-sm leading-relaxed;
+    }
+  }
+  

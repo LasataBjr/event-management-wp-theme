@@ -15,15 +15,17 @@
 
         <!-- Content -->
         <div class="order-1 lg:order-2">
-            <header class="section-header">
-                <span class="section-label">About Us</span>
+            <header class="flex items-center gap-4 mb-6">
+                <span class="h-px w-12 bg-gray-400"></span>
+                <span class="uppercase text-xs tracking-widest text-gray-500">About Us</span>
+                <span class="h-px w-12 bg-gray-400"></span>
             </header>
 
             <h2 class="section-title">
                 Specializing in unforgettable wedding photography memories.
             </h2>
 
-            <div class="section-text">
+            <div class="section-text space-y-6">
                 <p>
                     At Golden Memories, we believe every moment of your special day
                     deserves to be captured with heart and artistry.

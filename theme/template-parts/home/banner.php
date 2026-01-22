@@ -3,7 +3,7 @@
   <section class="min-h-screen px-4 sm:px-8 lg:px-16 py-12 lg:py-20">
         <div class="max-w-7xl mx-auto">
             <!-- Heading and Description -->
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-12 lg:mb-16">
+            <div class="grid lg:grid-cols-2 gap-5 lg:gap-12 items-start mb-12 lg:mb-16">
                 <!-- Left: Heading -->
                 <div>
                     <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-semibold text-gray-900 leading-tight">

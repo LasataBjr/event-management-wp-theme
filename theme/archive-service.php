@@ -39,7 +39,7 @@
                     $categories = wp_list_pluck($terms, 'name');
                 }
         ?>
-                <div class="service-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                <div class="card border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
                     <?php if ($img_url): ?>
                         <a href="<?php the_permalink(); ?>">
                             <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($img_alt); ?>" class="w-full h-48 object-cover">
