@@ -3,7 +3,9 @@ const typographyConfig = require('./tailwind-typography.config.js');
 module.exports = {
   content: [
       "./theme/**/*.php",       // All PHP files in your theme
-      "./javascript/**/*.js", // All JS files]
+      "./javascript/**/*.js", // All JS files
+      "./template-pages/**/*.php",
+      "./template-parts/**/*.php"
     ],
   
   container: {
@@ -49,7 +51,7 @@ module.exports = {
             '0%, 100%': { transform: 'scale(100%)' },
             '50%': { transform: 'scale(120%)' },
           },
-          celebrate: {
+          'celebrate': {
             '0%, 100%': {
               transform: 'scale(.95) rotate(0deg)',
               boxShadow: '0 0 0 0 rgba(0, 154, 114, 0.1), 0 0 0 0 rgba(0, 162, 114, 0.1)',

@@ -6,7 +6,7 @@
 function ev_enqueue_styles() {
     // Path to the main style.css in the theme root
     $css_file = get_template_directory() . '/style.css';
-    $css_url  = get_stylesheet_uri();
+    $css_url  = get_template_directory_uri() . '/style.css';
 
     if (file_exists($css_file)) {
         wp_enqueue_style('tailwind', $css_url, [], filemtime($css_file));

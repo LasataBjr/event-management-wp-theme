@@ -2,7 +2,6 @@
 @import "./custom/base.css";
 @import "./custom/components/button.css";
 @import "./custom/components/sections.css";
-@import "./custom/components/animations.css";
 @import "./custom/components/components.css";
 
 @tailwind base;
